@@ -1,0 +1,20 @@
+<ion-item [routerLink]="['/', 'personnels', 'personnel-dialog', personnel.id]">
+
+    <ion-thumbnail slot="start">
+        <ion-img [src]="personnel.sex ? '/assets/images/man.svg' : '/assets/images/woman.svg'"></ion-img>
+    </ion-thumbnail>
+
+    <ion-label>
+        <h1>{{ personnel.firstName + ' ' + personnel.lastName}}</h1>
+        <div class="person-details">
+            <ion-icon name="calendar" color="primary"></ion-icon>
+            <ion-text color="tertiary" class="space-left">{{
+                personnel.fatherName}}
+            </ion-text>
+            <span class="space-left">to</span>
+            <ion-icon name="calendar" class="space-left" color="primary"></ion-icon>
+            <ion-text color="tertiary" class="space-left">{{personnel.melliCode}}</ion-text>
+        </div>
+    </ion-label>
+
+</ion-item>

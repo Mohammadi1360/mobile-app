@@ -1,0 +1,64 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>{{ "HOME.PersonnelList" | translate }}</ion-title>
+        <ion-buttons slot="primary">
+            <ion-button routerLink="/personnels/personnel-dialog">
+                <ion-icon name="add" slot="icon-only"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col size="12" size-sm="8" offset-sm="2">
+                <ion-searchbar placeholder="{{'PUBLIC.TXT.Search' | translate}}"
+                               (ionInput)="getItems($event)"></ion-searchbar>
+
+                <p class="ion-text-center" *ngIf="!personnelList || personnelList.length <= 0">
+                    {{ "ALERT.No Personnel Found !" | translate }}
+                </p>
+
+                <ion-list>
+                    <ion-item-sliding *ngFor="let personnel of personnelList" #slidingItem>
+
+                        <ion-item-options side="start">
+                            <ion-item-option color="primary" (click)="onEdit(personnel.id,slidingItem)">
+                                <ion-icon name="create" slot="icon-only"></ion-icon>
+                            </ion-item-option>
+                        </ion-item-options>
+
+                        <ion-item>
+                            <app-personnel-item [personnel]="personnel"></app-personnel-item>
+                        </ion-item>
+
+                        <ion-item-options side="end">
+                            <ion-item-option color="danger" (click)="onDelete(personnel.id,slidingItem)">
+                                <ion-icon name="trash" slot="icon-only"></ion-icon>
+                            </ion-item-option>
+                        </ion-item-options>
+                    </ion-item-sliding>
+
+                    <!--<ion-item-sliding *ngFor="let personnel of personnelList" side="start" dir="rtl" #slidingItem>-->
+                    <!--<ion-item-options side="end">-->
+                    <!--<ion-item-option-->
+                    <!--color="secondary"-->
+                    <!--(click)="onAdd()">-->
+                    <!--<ion-icon name="create" slot="icon-only"></ion-icon>-->
+                    <!--</ion-item-option>-->
+                    <!--</ion-item-options>-->
+
+                    <!--<ion-item dir="rtl">-->
+                    <!--<app-personnel-item [personnel]="personnel"></app-personnel-item>-->
+                    <!--</ion-item>-->
+
+                    <!--</ion-item-sliding>-->
+                </ion-list>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

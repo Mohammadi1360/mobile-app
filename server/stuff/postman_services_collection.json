@@ -1,0 +1,307 @@
+{
+	"variables": [],
+	"info": {
+		"name": "MobileApp",
+		"_postman_id": "00689e48-7a97-2a68-8fcd-6ec1f83f8e0b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "personnel",
+			"description": "",
+			"item": [
+				{
+					"name": "localhost:3003/api/private/personnel",
+					"request": {
+						"url": "localhost:3003/api/private/personnel",
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijg5MWRjZTcwLTA2MWItNGVhYy05NTE2LThiNjQ5ZDY5YzUwYyIsImlhdCI6MTU1ODk0NTgxMSwiZXhwIjoxNTU5MDMyMjExfQ.BwvtddpqWfUFA2mLSlAj-5X_u9doyrBSB1usLMHDq2A",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3003/api/private/personnel",
+					"request": {
+						"url": "localhost:3003/api/private/personnel",
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZiYTAwN2I2LTBiZGUtNGI1YS04NjBmLWNhZWUxN2E5ZGZhNiIsImlhdCI6MTU1ODk1NDUwMCwiZXhwIjoxNTU5MDQwOTAwfQ.l8E9NwDU7ZA2zwTRJ70Tg3Ex61AWei1z5rmH3gOcHbs",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"personCode\":\"1\",\n            \"firstName\": \"محمد\",\n            \"lastName\": \"محمدی\",\n            \"fatherName\": \"جعفر\",\n            \"certificateNo\": \"1\",\n            \"melliCode\": \"0559709722\",\n            \"sex\": \"مرد\",\n            \"address\": \"تهران\",\n            \"tel\": \"27319594\",\n            \"mobile\": \"09108180800\",\n            \"deptAmount\": \"12000000\",\n            \"trashService\": true,\n            \"neighborId\": 123,\n            \"ownerType\": \"شخصی\",\n            \"job\": \"کارمند\",\n            \"buildingDocumentNo\": \"123\"\n        }"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3003/api/private/personnel/2",
+					"request": {
+						"url": "localhost:3003/api/private/personnel/1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijg5MWRjZTcwLTA2MWItNGVhYy05NTE2LThiNjQ5ZDY5YzUwYyIsImlhdCI6MTU1ODk0NTgxMSwiZXhwIjoxNTU5MDMyMjExfQ.BwvtddpqWfUFA2mLSlAj-5X_u9doyrBSB1usLMHDq2A",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3003/api/private/personnel/2",
+					"request": {
+						"url": "localhost:3003/api/private/personnel/3",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijg5MWRjZTcwLTA2MWItNGVhYy05NTE2LThiNjQ5ZDY5YzUwYyIsImlhdCI6MTU1ODk0NTgxMSwiZXhwIjoxNTU5MDMyMjExfQ.BwvtddpqWfUFA2mLSlAj-5X_u9doyrBSB1usLMHDq2A",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3003/api/private/personnel/10",
+					"request": {
+						"url": "localhost:3003/api/private/personnel/10",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZiYTAwN2I2LTBiZGUtNGI1YS04NjBmLWNhZWUxN2E5ZGZhNiIsImlhdCI6MTU1ODk1NDUwMCwiZXhwIjoxNTU5MDQwOTAwfQ.l8E9NwDU7ZA2zwTRJ70Tg3Ex61AWei1z5rmH3gOcHbs",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"personCode\":\"1\",\n            \"firstName\": \"محمد\",\n            \"lastName\": \"محمدی\",\n            \"fatherName\": \"جعفر\",\n            \"certificateNo\": \"1\",\n            \"melliCode\": \"0559709722\",\n            \"sex\": \"مرد\",\n            \"address\": \"تهران\",\n            \"tel\": \"27319594\",\n            \"mobile\": \"09108180800\",\n            \"deptAmount\": \"12000000\",\n            \"trashService\": true,\n            \"neighborId\": 123,\n            \"ownerType\": \"شخصی\",\n            \"job\": \"کارمند\",\n            \"buildingDocumentNo\": \"23333\"\n        }"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "town",
+			"description": "",
+			"item": [
+				{
+					"name": "localhost:3003/api/private/town/40000",
+					"request": {
+						"url": "localhost:3003/api/private/town/40000",
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImMxZjdiNmNmLTcyZmYtNGM0ZS1hYWFmLTgyNjg4NTBjYmY3ZiIsImlhdCI6MTU1OTI0Mzg4OSwiZXhwIjoxNTU5MzMwMjg5fQ.CoAvyYm4Dxrc9wuFY1TB4vGqaspYIzQSjr1S7lLPgvI",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3003/api/private/town/townList",
+					"request": {
+						"url": "localhost:3003/api/private/town/townList",
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImMxZjdiNmNmLTcyZmYtNGM0ZS1hYWFmLTgyNjg4NTBjYmY3ZiIsImlhdCI6MTU1OTI0Mzg4OSwiZXhwIjoxNTU5MzMwMjg5fQ.CoAvyYm4Dxrc9wuFY1TB4vGqaspYIzQSjr1S7lLPgvI",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"shire\":\"مرکزي\",\n\t\"city\":\"خمين\",\n\t\"zone\":\"مرکزي\",\n\t\"dehestan\":\"صالحان\",\n\t\"townName\":\"گلدشت\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"description": "",
+			"item": [
+				{
+					"name": "localhost:3003/api/public/user/signup",
+					"request": {
+						"url": "localhost:3003/api/public/user/signup",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstName\":\"محمد\",\n\t\"lastName\":\"محمدی\",\n\t\"mobileNo\" : \"09108180800\",\n\t\"email\":\"mohammadi1360@gmail.com\",\n\t\"password\":\"123456\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3003/api/private/user/user",
+					"request": {
+						"url": "localhost:3003/api/private/user/user",
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRjMjkzNTIyLTE0ZjUtNDE4My1iZjEzLWY1ZmM3NjBlOThmOSIsImlhdCI6MTU1OTA0ODk4NywiZXhwIjoxNTU5MTM1Mzg3fQ.O-W1gYzhzls7qsf3lIVeJc60gEEqP_BwoiL0_ahC9S4",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3003/api/private/user/changePassword",
+					"request": {
+						"url": "localhost:3003/api/private/user/changePassword",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjA3MWUxMTFmLTg3ODctNGU0OS1iNDFjLWYwYzUwN2JkNmZiMSIsImlhdCI6MTU1OTA0ODM5NSwiZXhwIjoxNTU5MTM0Nzk1fQ.K9RTcuM7XDTFPsf1dIhqQANJlk65G_H3QnzAU2thwO0",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"oldPassword\":\"123456\",\n\t\"newPassword\":\"123456\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3003/api/public/user/signin",
+					"request": {
+						"url": "localhost:3003/api/public/user/signin",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"mobileNo\":\"09108180800\",\n\t\"password\":\"123456\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3003/api/private/user/signout",
+					"request": {
+						"url": "localhost:3003/api/private/user/signout",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjdiNzZjNTg0LTBjMDAtNDgzYi05YTIzLWY0YmJjNDY5ZjkxNiIsImlhdCI6MTU1OTA0ODU5MSwiZXhwIjoxNTU5MTM0OTkxfQ.60R0U-hq5nRhafvZCMRekvGWM1o_3e4yMCYLypbvgfM",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3003/api/private/user/7d682d7d-cc5f-4093-8101-530e57fd9acf",
+					"request": {
+						"url": "localhost:3003/api/private/user/7d682d7d-cc5f-4093-8101-530e57fd9acf",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRjMjkzNTIyLTE0ZjUtNDE4My1iZjEzLWY1ZmM3NjBlOThmOSIsImlhdCI6MTU1OTA0ODk4NywiZXhwIjoxNTU5MTM1Mzg3fQ.O-W1gYzhzls7qsf3lIVeJc60gEEqP_BwoiL0_ahC9S4",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstName\":\"محمد\",\n\t\"lastName\":\"محمدی\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,3 @@
+https://grokonez.com/node-js/jwt/nodejs-jwt-authentication-nodejs-express-restapis-json-web-token-bcryptjs-sequelize-mysql
+
+

@@ -1,0 +1,254 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="end">
+            <ion-back-button
+                    icon="arrow-forward" (clicl)="onBackButtonClick()">
+
+            </ion-back-button>
+        </ion-buttons>
+
+        <ion-title>{{ "PERSONNEL.FORM.viewDialogTitle" | translate }}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <form #pForm="ngForm">
+        <ion-grid>
+            <ion-card>
+
+                <ion-list>
+
+                    <ion-row>
+                        <ion-col size-xs="12" size-sm="4">
+                            <ion-item>
+                                <ion-label color="tertiary" position="start">{{ "PERSONNEL.personCode" | translate }}
+                                </ion-label>
+                                <ion-input type="number"
+                                           [(ngModel)]="currentPerson.personCode"
+                                           name="personCode"
+                                           required></ion-input>
+                            </ion-item>
+                        </ion-col>
+
+                        <ion-col size-xs="12" size-sm="4">
+                            <ion-item>
+                                <ion-label color="tertiary" position="start">{{ "PERSONNEL.firstName" | translate }}
+                                </ion-label>
+                                <ion-input type="text"
+                                           [(ngModel)]="currentPerson.firstName"
+                                           name="firstName"
+                                           required></ion-input>
+                            </ion-item>
+                        </ion-col>
+
+                        <ion-col size-xs="12" size-sm="4">
+                            <ion-item>
+                                <ion-label color="tertiary" position="start">{{ "PERSONNEL.lastName" | translate }}
+                                </ion-label>
+                                <ion-input type="text" [(ngModel)]="currentPerson.lastName" name="lastName"
+                                           required></ion-input>
+                            </ion-item>
+                        </ion-col>
+
+
+                    </ion-row>
+
+                    <ion-row>
+
+                        <ion-col size-xs="12" size-sm="4">
+                            <ion-item>
+                                <ion-label color="tertiary" position="start">{{ "PERSONNEL.fatherName" | translate }}
+                                </ion-label>
+                                <ion-input type="text" [(ngModel)]="currentPerson.fatherName" name="fatherName"
+                                           required></ion-input>
+                            </ion-item>
+                        </ion-col>
+
+                        <ion-col size-xs="12" size-sm="4">
+                            <ion-item>
+                                <ion-label color="tertiary" position="start">{{ "PERSONNEL.certificateNo" | translate
+                                    }}
+                                </ion-label>
+                                <ion-input type="number" [(ngModel)]="currentPerson.certificateNo"
+                                           name="certificateNo"
+                                           required></ion-input>
+                            </ion-item>
+                        </ion-col>
+                        <ion-col size-xs="12" size-sm="4">
+                            <ion-item>
+                                <ion-label color="tertiary" position="start">{{ "PERSONNEL.melliCode" | translate }}
+                                </ion-label>
+                                <ion-input type="number" [(ngModel)]="currentPerson.melliCode" name="melliCode"
+                                           required></ion-input>
+                            </ion-item>
+                        </ion-col>
+
+                    </ion-row>
+
+                    <ion-row>
+                        <ion-col size-xs="12" size-sm="4">
+                            <ion-item>
+                                <ion-label color="tertiary" position="start">{{ "PERSONNEL.sex" | translate }}
+                                </ion-label>
+
+                                <ion-select [(ngModel)]="currentPerson.sex" name="sex"
+                                            okText="{{ 'PUBLIC.BTN.Ok' | translate }}"
+                                            cancelText="{{ 'PUBLIC.BTN.Cancel' | translate }}"
+                                            required>
+
+                                    <ion-select-option [value]="true">
+                                        {{ "PUBLIC.TXT.Man" | translate }}
+                                    </ion-select-option>
+                                    <ion-select-option [value]="false">
+                                        {{ "PUBLIC.TXT.Woman" | translate }}
+                                    </ion-select-option>
+                                </ion-select>
+
+                            </ion-item>
+                        </ion-col>
+
+                        <ion-col size-xs="12" size-sm="4">
+                            <ion-item>
+                                <ion-label color="tertiary" position="start">{{ "PERSONNEL.tel" | translate }}
+                                </ion-label>
+                                <ion-input type="number" [(ngModel)]="currentPerson.tel" name="tel"
+                                           required></ion-input>
+                            </ion-item>
+                        </ion-col>
+                        <ion-col size-xs="12" size-sm="4">
+                            <ion-item>
+                                <ion-label color="tertiary" position="start">{{ "PERSONNEL.mobile" | translate }}
+                                </ion-label>
+                                <ion-input type="number" [(ngModel)]="currentPerson.mobile" name="mobile"
+                                           required></ion-input>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row>
+                        <ion-col size-xs="12" size-sm="12">
+                            <ion-item>
+                                <ion-label color="tertiary" position="start">
+                                    {{ "PERSONNEL.address" | translate }}
+                                </ion-label>
+                                <ion-input type="text"
+                                           [(ngModel)]="currentPerson.address"
+                                           name="address"
+                                           required></ion-input>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row>
+                        <ion-col size-xs="12" size-sm="4">
+                            <ion-item>
+                                <ion-label color="tertiary" position="start">{{ "PERSONNEL.deptAmount" | translate }}
+                                </ion-label>
+                                <ion-input type="number" [(ngModel)]="currentPerson.deptAmount" name="deptAmount"
+                                           required></ion-input>
+                            </ion-item>
+                        </ion-col>
+
+                        <ion-col size-xs="12" size-sm="4">
+
+                            <ion-item>
+                                <ion-label color="tertiary"
+                                           position="start">
+                                    {{ "PERSONNEL.trashService" | translate }}
+                                </ion-label>
+
+                                <ion-checkbox [(ngModel)]="currentPerson.trashService"
+                                              name="trashService"
+                                              color="primary"
+                                              checked
+                                              slot="end">
+                                </ion-checkbox>
+                            </ion-item>
+                        </ion-col>
+
+                        <ion-col size-xs="12" size-sm="4">
+                            <ion-item>
+                                <ion-label color="tertiary" position="start">{{ "PERSONNEL.neighborId" | translate }}
+                                </ion-label>
+                                <ion-input type="text" [(ngModel)]="currentPerson.neighborId" name="neighborId"
+                                           required></ion-input>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row>
+                        <ion-col size-xs="12" size-sm="4">
+
+                            <ion-item>
+                                <ion-label color="tertiary" position="start">
+                                    {{ "PERSONNEL.ownerType" | translate }}
+                                </ion-label>
+
+                                <ion-select [(ngModel)]="currentPerson.ownerType" name="ownerType"
+                                            okText="{{ 'PUBLIC.BTN.Ok' | translate }}"
+                                            cancelText="{{ 'PUBLIC.BTN.Cancel' | translate }}"
+                                            required>
+
+                                    <ion-select-option
+                                            value="{{ 'PUBLIC.TXT.Rental' | translate }}">
+                                        {{ "PUBLIC.TXT.Rental" | translate }}
+                                    </ion-select-option>
+                                    <ion-select-option
+                                            value="{{ 'PUBLIC.TXT.Owner' | translate }}">
+                                        {{ "PUBLIC.TXT.Owner" | translate }}
+                                    </ion-select-option>
+                                </ion-select>
+                            </ion-item>
+                        </ion-col>
+
+                        <ion-col size-xs="12" size-sm="4">
+                            <ion-item>
+                                <ion-label color="tertiary" position="start">{{ "PERSONNEL.job" | translate }}
+                                </ion-label>
+                                <ion-input type="text" [(ngModel)]="currentPerson.job" name="job"
+                                           required></ion-input>
+                            </ion-item>
+                        </ion-col>
+
+                        <ion-col size-xs="12" size-sm="4">
+                            <ion-item>
+                                <ion-label color="tertiary" position="start">{{ "PERSONNEL.buildingDocumentNo" |
+                                    translate }}
+                                </ion-label>
+                                <ion-input type="number" [(ngModel)]="currentPerson.buildingDocumentNo"
+                                           name="buildingDocumentNo"
+                                           required></ion-input>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+
+                </ion-list>
+
+                <ion-row>
+                    <ion-col size-sm="5" offset-sm="1">
+                        <ion-button type="button"
+                                    (click)="onSave()"
+                                    color="primary"
+                                    expand="block">
+                            <ion-label>{{ "PUBLIC.BTN.Register" | translate }}</ion-label>
+                        </ion-button>
+                    </ion-col>
+
+                    <ion-col size-sm="5">
+                        <ion-button type="button"
+                                    (click)="onCancel()"
+                                    color="warning"
+                                    expand="block">
+                            <ion-label>{{ "PUBLIC.BTN.Cancel" | translate }}</ion-label>
+                        </ion-button>
+                    </ion-col>
+
+                </ion-row>
+
+            </ion-card>
+
+        </ion-grid>
+    </form>
+
+</ion-content>

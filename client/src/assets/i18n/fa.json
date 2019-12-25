@@ -1,0 +1,91 @@
+{
+  "LOGIN": {
+    "Login": "ورود کاربری",
+    "Signup": "ایجاد کاربر جدید",
+    "FirstName": "نام",
+    "LastName": "نام خانوادگی",
+    "MobileNumber": "شماره موبایل",
+    "Password": "رمز عبور",
+    "ConfirmPassword": "تکرار رمز عبور",
+    "Email": "ایمیل",
+    "Messages": {
+      "Should at least be 6 characters long !": "رمز عبور حداقل میبایست 6 کاراکتر باشد !"
+    }
+  },
+  "HOME": {
+    "Logout": "خروج",
+    "Setting": "تنظیمات",
+    "PersonnelList": "لیست سرپرستهای خانوار",
+    "title": "Home",
+    "greeting": "Hey {{name}}! Welcome to the Ionic Academy!",
+    "withCode": "<br><br>You are <b>epic</b>!",
+    "btn": "Show Alert"
+  },
+  "PERSONNEL": {
+    "id": "شناسه",
+    "personCode": "کد شخص",
+    "firstName": "نام",
+    "lastName": "نام خانوادگی",
+    "fatherName": "نام پدر",
+    "certificateNo": "شماره شناسنامه",
+    "melliCode": "کد ملی",
+    "sex": "جنسیت",
+    "address": "آدرس",
+    "tel": "شماره تلفن",
+    "mobile": "شماره موبایل",
+    "deptAmount": "بدهی قبلی",
+    "trashService": "خدمات پسماند",
+    "neighborId": "همسایه",
+    "ownerType": "نوع مالکیت",
+    "job": "شغل سرپرست خانوار",
+    "buildingDocumentNo": "شماره پروانه ساختمان",
+    "FORM": {
+      "title": "لیست سرپرست های خانوار",
+      "newDialogTitle": "ثبت عضو جدید",
+      "editDialogTitle": "ویرایش اطلاعات سرپرست",
+      "viewDialogTitle": "نمایش اطلاعات سرپرست"
+    },
+    "MESSAGES": {
+      "New Person Saved Successfully !": "اطلاعات شخص جدید با موفقیت ذخیره شد !",
+      "Current Person Updated Successfully !": "اطلاعات شخص مورد نظر با موفقیت به روز رسانی شد !",
+      "Can Not Find The Person !": "شخص مورد نظر یافت نشد !",
+      "Error In Save !": "خطا در ذخیره سازی !!",
+      "No Change To Save !": "تغییراتی برای ذخیره یافت نشد !",
+      "Form Is Not Valid": "اطلاعات فرم معتبر نمی باشد !",
+      "Delete Person": "حذف شخص",
+      "Are You Sure ?": "آیا مطمئن هستید ؟",
+      "Form Data Changed , Are You Sure To Leave Without Save ?": "هنوز اطلاعات ورودی ذخیره نشده است, آیا جهت خروج مطمئن هستید ؟"
+    }
+  },
+  "PUBLIC": {
+    "BTN": {
+      "Register": "ثبت",
+      "Delete": "حذف",
+      "Ok": "تایید",
+      "Cancel": "انصراف",
+      "Yes": "بلی",
+      "No": "خیر"
+    },
+    "TXT": {
+      "Search": "جستجو",
+      "Man": "مرد",
+      "Woman": "زن",
+      "Have": "دارد",
+      "NotHave": "ندارد",
+      "Rental": "استیجاری",
+      "Owner": "مالک"
+    }
+  },
+  "SETTING": {
+    "Title": "تنظیمات",
+    "Language": "زبان",
+    "English": "انگلیسی",
+    "Persian": "فارسی"
+  },
+  "ALERT": {
+    "No Personnel Found !": "هیچ شخصی پیدا نشد !",
+    "No Bookings Found !": "هیچ ثبت درخواستی ثبت نشد !",
+    "header": "Error",
+    "msg": "There was a problem with your operation"
+  }
+}

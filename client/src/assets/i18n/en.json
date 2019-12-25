@@ -1,0 +1,92 @@
+{
+  "LOGIN": {
+    "Login": "Login",
+    "Signup": "Create New Account",
+    "FirstName": "FirstName",
+    "LastName": "LastName",
+    "MobileNumber": "MobileNumber",
+    "Password": "Password",
+    "ConfirmPassword": "ConfirmPassword",
+    "Email": "Email",
+    "Messages": {
+      "Should at least be 6 characters long !": "Should at least be 6 characters long !",
+      "Switch to": "Switch to"
+    }
+  },
+  "HOME": {
+    "Logout": "Logout",
+    "Setting": "Setting",
+    "PersonnelList": "PersonnelList",
+    "title": "Home",
+    "greeting": "Hey {{name}}! Welcome to the Ionic Academy!",
+    "withCode": "<br><br>You are <b>epic</b>!",
+    "btn": "Show Alert"
+  },
+  "PERSONNEL": {
+    "id": "id",
+    "personCode": "personCode",
+    "firstName": "firstName",
+    "lastName": "lastName",
+    "fatherName": "fatherName",
+    "certificateNo": "certificateNo",
+    "melliCode": "melliCode",
+    "sex": "sex",
+    "address": "address",
+    "tel": "tel",
+    "mobile": "mobile",
+    "deptAmount": "deptAmount",
+    "trashService": "trashService",
+    "neighborId": "neighborId",
+    "ownerType": "ownerType",
+    "job": "job",
+    "buildingDocumentNo": "buildingDocumentNo",
+    "FORM": {
+      "title": "Personnel List",
+      "newDialogTitle": "Create New Personnel",
+      "editDialogTitle": "Edit Personnel",
+      "viewDialogTitle": "View Personnel Details"
+    },
+    "MESSAGES": {
+      "New Person Saved Successfully !": "New Person Saved Successfully !",
+      "Current Person Updated Successfully !": "Current Person Updated Successfully !",
+      "Can Not Find The Person !": "Can Not Find The Person !",
+      "Error In Save !": "Error In Save !",
+      "No Change To Save !": "No Change To Save !",
+      "Form Is Not Valid": "Form Is Not Valid !",
+      "Delete Person": "Delete Person",
+      "Are You Sure ?": "Are You Sure ?",
+      "Form Data Changed , Are You Sure To Leave Without Save ?": "Form Data Changed , Are You Sure Tui Leave Without Save ?"
+    }
+  },
+  "PUBLIC": {
+    "BTN": {
+      "Register": "Register",
+      "Delete": "Delete",
+      "Ok": "Ok",
+      "Cancel": "Cancel",
+      "Yes": "Yes",
+      "No": "No"
+    },
+    "TXT": {
+      "Search": "Search",
+      "Man": "Man",
+      "Woman": "Woman",
+      "Have": "Have",
+      "NotHave": "Have Not",
+      "Rental": "Rental",
+      "Owner": "Owner"
+    }
+  },
+  "SETTING": {
+    "Title": "Setting",
+    "Language": "Language",
+    "English": "English",
+    "Persian": "فارسی"
+  },
+  "ALERT": {
+    "No Personnel Found !": "No Personnel Found !",
+    "No Bookings Found !": "No Bookings Found !",
+    "header": "Error",
+    "msg": "There was a problem with your operation"
+  }
+}
